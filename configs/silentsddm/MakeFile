@@ -1,0 +1,11 @@
+PATH = ~/DotQuest/configs/silentsddm
+TO = ~/etc
+
+silentsddm-dependencies:
+	yay -S sddm-silent-theme --noconfirm
+
+silentsddm-config:
+	cp $(PATH)/sddm.conf $(TO)
+
+silentsddm: silentsddm-dependencies silentsddm-config
+.PHONY silentsddm
