@@ -1,7 +1,7 @@
-PATH = ~/DotQuest/configs/hypr
-TO = ~/
+SCH := $(HOME)/DotQuest/configs/bashrc
+TO := $(HOME)
 
 bashrc:
-	cp $(PATH)/.bashrc $(TO)
+	cp $(SCH)/.bashrc $(TO)
 
-.PHONY bashrc
+.PHONY: bashrc

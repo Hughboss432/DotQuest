@@ -1,14 +1,14 @@
-PATH = ~/DotQuest/configs/waybar-cava
-TO = ~/.config/waybar
+SCH := $(HOME)/DotQuest/configs/waybar-cava
+TO := $(HOME)/.config/waybar
 
 waybar-cava-dependencies:
 	yay -S waybar-cava --noconfirm
 
 waybar-cava-config:
 	mkdir -p $(TO)
-	cp $(PATH)/config $(TO)
-	cp $(PATH)/power_menu.xml $(TO)
-	cp $(PATH)/style-dark.css $(TO)
+	cp $(SCH)/config $(TO)
+	cp $(SCH)/power_menu.xml $(TO)
+	cp $(SCH)/style-dark.css $(TO)
 
 waybar-cava: waybar-cava-dependencies waybar-cava-config
-.PHONY waybar-cava
+.PHONY: waybar-cava

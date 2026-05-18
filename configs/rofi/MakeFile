@@ -1,14 +1,14 @@
-PATH = ~/DotQuest/configs/rofi
-TO = ~/.config/rofi
+SCH := $(HOME)/DotQuest/configs/rofi
+TO := $(HOME)/.config/rofi
 
 rofi-dependencies:
-	pacman -S rofi --noconfirm
+	sudo pacman -S rofi --noconfirm
 
 rofi-config:
 	mkdir -p $(TO)
-	cp $(PATH)/colors-next.rasi $(TO)
-	cp $(PATH)/colors.rasi $(TO)
-	cp $(PATH)/config.rasi $(TO)
+	cp $(SCH)/colors-next.rasi $(TO)
+	cp $(SCH)/colors.rasi $(TO)
+	cp $(SCH)/config.rasi $(TO)
 
 rofi: rofi-dependencies rofi-config
-.PHONY rofi
+.PHONY: rofi
