@@ -8,7 +8,7 @@ dependencies:
 	sudo pacman -S --needed git base-devel --noconfirm
 	rm -rf /tmp/yay && \
 	git clone https://aur.archlinux.org/yay.git /tmp/yay && \
-		cd /tmp/yay && makepkg -si
+		cd /tmp/yay && makepkg -si --needed --noconfirm
 #---my essencial
 	sudo pacman -S dolphin --noconfirm
 	yay -S librewolf-bin fastfetch cava \

@@ -1,4 +1,4 @@
-SCH := $(HOME)/DotQuest/configs/hyprlock
+SCH := /configs/hyprlock
 TO := $(HOME)/.config/hypr
 
 hyprlock-dependencies:

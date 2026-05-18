@@ -1,4 +1,4 @@
-SCH := $(HOME)/DotQuest/configs/kitty
+SCH := /configs/kitty
 TO := $(HOME)/.config/kitty
 
 kitty-dependencies:

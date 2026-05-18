@@ -1,4 +1,4 @@
-SCH := $(HOME)/DotQuest/configs/bashrc
+SCH := /configs/bashrc
 TO := $(HOME)
 
 bashrc:

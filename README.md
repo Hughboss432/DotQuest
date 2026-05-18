@@ -15,7 +15,7 @@ sudo pacman -S git make --noconfirm
 ```
 
 ```bash
-git clone https://github.com/Hughboss432/DotQuest.git /tmp
+git clone https://github.com/Hughboss432/DotQuest.git /tmp/DotQuest
 cd /tmp/DotQuest
 ```
 
@@ -24,13 +24,13 @@ cd /tmp/DotQuest
 If you want, you may install all my .config files **after a clean Arch Linux installation**. This will install not only the configuration files, but also all the essentials you may need, such as Hyprland, yay and more essencials.
 
 ```bash
-make -f makefile.mk install --noconfirm
+make -f makefile.mk install
 ```
 
 You can also install **only what you want** by typing the package name to call the respective script:
 
 ```bash
-make waybar-cava --noconfirm
+make waybar-cava
 ```
 
 ---

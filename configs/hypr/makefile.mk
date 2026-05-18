@@ -1,4 +1,4 @@
-SCH := $(HOME)/DotQuest/configs/hypr
+SCH := /configs/hypr
 TO := $(HOME)/.config/hypr
 
 hyprland-cursor:
