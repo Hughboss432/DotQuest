@@ -1,4 +1,4 @@
-SCH := /configs/waybar-cava
+SCH := ./configs/waybar-cava
 TO := $(HOME)/.config/waybar
 
 waybar-cava-dependencies:

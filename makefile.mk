@@ -1,3 +1,5 @@
+SCH := ./configs
+
 #############
 # Essencial Build
 #############
@@ -25,19 +27,19 @@ dependencies:
 #############
 
 bashrc:
-	$(MAKE) -f configs/bashrc/makefile.mk bashrc
+	$(MAKE) -f $(SCH)/bashrc/makefile.mk bashrc
 hypr:
-	$(MAKE) -f configs/hypr/makefile.mk hypr
+	$(MAKE) -f $(SCH)/hypr/makefile.mk hypr
 hyprlock:
-	$(MAKE) -f configs/hyprlock/makefile.mk hyprlock
+	$(MAKE) -f $(SCH)/hyprlock/makefile.mk hyprlock
 rofi:
-	$(MAKE) -f configs/rofi/makefile.mk rofi
+	$(MAKE) -f $(SCH)/rofi/makefile.mk rofi
 silentsddm:
-	$(MAKE) -f configs/silentsddm/makefile.mk silentsddm
+	$(MAKE) -f $(SCH)/silentsddm/makefile.mk silentsddm
 waybar-cava:
-	$(MAKE) -f configs/waybar-cava/makefile.mk waybar-cava
+	$(MAKE) -f $(SCH)/waybar-cava/makefile.mk waybar-cava
 kitty:
-	$(MAKE) -f configs/kitty/makefile.mk kitty
+	$(MAKE) -f $(SCH)/kitty/makefile.mk kitty
 
 #############
 # Installing

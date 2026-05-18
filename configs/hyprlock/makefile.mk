@@ -1,4 +1,4 @@
-SCH := /configs/hyprlock
+SCH := ./configs/hyprlock
 TO := $(HOME)/.config/hypr
 
 hyprlock-dependencies:

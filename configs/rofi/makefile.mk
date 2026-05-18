@@ -1,4 +1,4 @@
-SCH := /configs/rofi
+SCH := ./configs/rofi
 TO := $(HOME)/.config/rofi
 
 rofi-dependencies:

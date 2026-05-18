@@ -1,4 +1,4 @@
-PATH := /configs/silentsddm
+PATH := ./configs/silentsddm
 TO := $(HOME)/etc
 
 silentsddm-dependencies:

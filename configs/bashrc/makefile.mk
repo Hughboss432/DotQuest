@@ -1,4 +1,4 @@
-SCH := /configs/bashrc
+SCH := ./configs/bashrc
 TO := $(HOME)
 
 bashrc:
