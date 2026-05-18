@@ -2,33 +2,39 @@
 
 This repository is my .config files and automation for **Arch linux** with **hyprland**. As this project is a **beginner configuration**, it is expected to have more and better configurations in the future.
 
+This repository contains my `.config` files and automation scripts for **Arch Linux with Hyprland**. Since this project is still a **beginner configuration**, it is expected to receive more and better configurations in the future.
+
 ---
 
 ## 00 - Dependencies and project clone.
 
-For cloning the .config files and automation script, type the following commands in the terminal:
+To clone the `.config` files and automation scripts, run the following commands in the terminal:
 
 ```bash
 sudo pacman -S git make --noconfirm
 ```
 
 ```bash
-git clone https://github.com/Hughboss432/DotQuest.git
-cd DotQuest
+git clone https://github.com/Hughboss432/DotQuest.git /tmp
+cd /tmp/DotQuest
 ```
 
 ### 01 - Install only what you want or **ALL** my configs.
 
-If you want, you can install all my .config after a clean arch install. This will install **not only the .config** files but all the essencial you may need, like hyprland and yay. 
+If you want, you may install all my .config files **after a clean Arch Linux installation**. This will install not only the configuration files, but also all the essentials you may need, such as Hyprland, yay and more essencials.
 
 ```bash
-sudo make install
+make -f makefile.mk install --noconfirm
 ```
 
-You can also use **only what you want**, by typing the package name to call the respective script:
+You can also install **only what you want** by typing the package name to call the respective script:
 
 ```bash
-sudo make waybar-cava
+make waybar-cava --noconfirm
 ```
 
-> Remenber, even if you use the individual script it does'nt mean it will be apllied as you need to change your hyprland.conf to use it. If you need you may check my file and do whatever you want to change. 
+---
+
+> Remember: even if you use an individual script, it does not mean it will be applied exactly as you need. You may still need to modify your hyprland.conf to use it properly. Feel free to check my files and change whatever you want.
+
+> No dedicated video drivers are included in the script. You need to install them manually.

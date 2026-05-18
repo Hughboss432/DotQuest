@@ -9,10 +9,17 @@ dependencies:
 	rm -rf /tmp/yay && \
 	git clone https://aur.archlinux.org/yay.git /tmp/yay && \
 		cd /tmp/yay && makepkg -si
-#---extra
+#---my essencial
 	sudo pacman -S dolphin --noconfirm
 	yay -S librewolf-bin fastfetch cava \
 		hyprshot waypaper \
+		noto-fonts \
+		noto-fonts-emoji \
+		ttf-jetbrains-mono \
+		ttf-font-awesome \
+		pipewire \
+		wireplumber \
+		pipewire-pulse \
 		--noconfirm
 
 #############
@@ -20,21 +27,23 @@ dependencies:
 #############
 
 bashrc:
-	$(MAKE) -f $(CONF_PATH)/bashrc/MakeFile.mk bashrc
+	$(MAKE) -f $(CONF_PATH)/bashrc/makefile.mk bashrc
 hypr:
-	$(MAKE) -f $(CONF_PATH)/hypr/MakeFile.mk hypr
+	$(MAKE) -f $(CONF_PATH)/hypr/makefile.mk hypr
 hyprlock:
-	$(MAKE) -f $(CONF_PATH)/hyprlock/MakeFile.mk hyprlock
+	$(MAKE) -f $(CONF_PATH)/hyprlock/makefile.mk hyprlock
 rofi:
-	$(MAKE) -f $(CONF_PATH)/rofi/MakeFile.mk rofi
+	$(MAKE) -f $(CONF_PATH)/rofi/makefile.mk rofi
 silentsddm:
-	$(MAKE) -f $(CONF_PATH)/silentsddm/MakeFile.mk silentsddm
+	$(MAKE) -f $(CONF_PATH)/silentsddm/makefile.mk silentsddm
 waybar-cava:
-	$(MAKE) -f $(CONF_PATH)/waybar-cava/MakeFile.mk waybar-cava
+	$(MAKE) -f $(CONF_PATH)/waybar-cava/makefile.mk waybar-cava
+kitty:
+	$(MAKE) -f $(CONF_PATH)/kitty/makefile.mk kitty
 
 #############
 # Installing
 #############
 
-install: dependencies bashrc hypr hyprlock rofi silentsddm waybar-cava 
-.PHONY: install bashrc hypr hyprlock rofi silentsddm waybar-cava
+install: dependencies bashrc hypr hyprlock rofi silentsddm waybar-cava kitty
+.PHONY: install bashrc hypr hyprlock rofi silentsddm waybar-cava kitty
