@@ -4,8 +4,8 @@ TO := $(HOME)/.config/hypr
 hyprland-cursor:
 	rm -rf /tmp/warcraft-3 && \
 	git clone https://www.opencode.net/sorely/warcraft-3-cursors.git /tmp/warcraft-3 && \
-		cd /tmp && cp -r /warcraft-3-cursors ~/.icons
-	hyprctl setcursor warcraft-3-cursors 24
+		cd /tmp && cp -r /warcraft-3 ~/.icons
+	hyprctl setcursor warcraft-3 24
 
 hyprland-config:
 	cp $(SCH)/hyprland.conf $(TO)
