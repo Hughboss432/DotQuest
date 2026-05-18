@@ -9,6 +9,7 @@ hyprland-cursor:
 	cp -r /tmp/warcraft-3/ $(HOME)/.icons/
 
 hyprland-config:
+	rm -rf $(TO)
 	mkdir -p $(TO)
 	cp $(SCH)/hyprland.conf $(TO)
 

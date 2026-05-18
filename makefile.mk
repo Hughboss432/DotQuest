@@ -45,20 +45,5 @@ kitty:
 # Installing
 #############
 
-#install: dependencies bashrc hypr hyprlock rofi silentsddm waybar-cava kitty
-install:
-	@echo "[1/6] Installing dependencies..."
-	@$(MAKE) dependencies
-	@echo "[2/6] Installing bashrc..."
-	@$(MAKE) bashrc
-	@echo "[3/6] Installing Hyprland configs..."
-	@$(MAKE) hypr
-	@echo "[4/6] Installing Hyprlock..."
-	@$(MAKE) hyprlock
-	@echo "[5/6] Installing Rofi..."
-	@$(MAKE) rofi
-	@echo "[6/6] Installing SilentSDDM..."
-	@$(MAKE) silentsddm
-	@printf "\n\033[1;32mDotQuest installed successfully!\033[0m\n"
-
+install: dependencies bashrc hypr hyprlock rofi silentsddm waybar-cava kitty
 .PHONY: install bashrc hypr hyprlock rofi silentsddm waybar-cava kitty
