@@ -26,6 +26,7 @@ If you want, you may install all my .config files **after a clean Arch Linux ins
 ```bash
 make -f makefile.mk install
 ```
+> After the full install, reboot with `reboot now`.
 
 You can also install **only what you want** by typing the package name to call the respective script:
 
