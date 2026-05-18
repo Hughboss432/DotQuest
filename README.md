@@ -1,7 +1,5 @@
 # DotQuest
 
-This repository is my .config files and automation for **Arch linux** with **hyprland**. As this project is a **beginner configuration**, it is expected to have more and better configurations in the future.
-
 This repository contains my `.config` files and automation scripts for **Arch Linux with Hyprland**. Since this project is still a **beginner configuration**, it is expected to receive more and better configurations in the future.
 
 ---
