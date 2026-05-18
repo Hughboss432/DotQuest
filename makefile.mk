@@ -1,5 +1,3 @@
-CONF_PATH := $(HOME)/DotQuest/configs
-
 #############
 # Essencial Build
 #############
@@ -27,19 +25,19 @@ dependencies:
 #############
 
 bashrc:
-	$(MAKE) -f $(CONF_PATH)/bashrc/makefile.mk bashrc
+	$(MAKE) -f configs/bashrc/makefile.mk bashrc
 hypr:
-	$(MAKE) -f $(CONF_PATH)/hypr/makefile.mk hypr
+	$(MAKE) -f configs/hypr/makefile.mk hypr
 hyprlock:
-	$(MAKE) -f $(CONF_PATH)/hyprlock/makefile.mk hyprlock
+	$(MAKE) -f configs/hyprlock/makefile.mk hyprlock
 rofi:
-	$(MAKE) -f $(CONF_PATH)/rofi/makefile.mk rofi
+	$(MAKE) -f configs/rofi/makefile.mk rofi
 silentsddm:
-	$(MAKE) -f $(CONF_PATH)/silentsddm/makefile.mk silentsddm
+	$(MAKE) -f configs/silentsddm/makefile.mk silentsddm
 waybar-cava:
-	$(MAKE) -f $(CONF_PATH)/waybar-cava/makefile.mk waybar-cava
+	$(MAKE) -f configs/waybar-cava/makefile.mk waybar-cava
 kitty:
-	$(MAKE) -f $(CONF_PATH)/kitty/makefile.mk kitty
+	$(MAKE) -f configs/kitty/makefile.mk kitty
 
 #############
 # Installing
