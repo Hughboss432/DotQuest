@@ -2,7 +2,7 @@ SCH := ./configs/rofi
 TO := $(HOME)/.config/rofi
 
 rofi-dependencies:
-	sudo pacman -S rofi --noconfirm
+	sudo pacman -S --needed --noconfirm rofi
 
 rofi-config:
 	mkdir -p $(TO)

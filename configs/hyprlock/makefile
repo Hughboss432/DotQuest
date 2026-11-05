@@ -2,7 +2,7 @@ SCH := ./configs/hyprlock
 TO := $(HOME)/.config/hypr
 
 hyprlock-dependencies:
-	yay -S hyprlock --noconfirm
+	sudo pacman -S --needed --noconfirm hyprlock
 
 hyprlock-config:
 	cp $(SCH)/hyprlock.conf $(TO)

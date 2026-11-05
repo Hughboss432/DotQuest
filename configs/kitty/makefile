@@ -2,7 +2,7 @@ SCH := ./configs/kitty
 TO := $(HOME)/.config/kitty
 
 kitty-dependencies:
-	sudo pacman -S kitty --noconfirm
+	sudo pacman -S --needed --noconfirm kitty
 
 kitty-config:
 	mkdir -p $(TO)

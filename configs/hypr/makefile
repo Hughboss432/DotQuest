@@ -11,7 +11,7 @@ hyprland-cursor:
 hyprland-config:
 	rm -rf $(TO)
 	mkdir -p $(TO)
-	cp $(SCH)/hyprland.conf $(TO)
+	cp $(SCH)/hyprland.lua $(TO)
 
 hypr: hyprland-cursor hyprland-config
 .PHONY: hypr
